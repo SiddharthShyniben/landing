@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/****/
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fcf7f8;
+}
+
+#moving {
+  border: 1px solid #fff2;
+  border-top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+body {
+  height: 300vh;
+  background-color: #121212;
+}
+
+.toolbar {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #fff2;
+  padding-left: 10px;
+  letter-spacing: 6px;
+  font-size: 26px;
+  border-radius: 3px 3px 0 0;
+
+  height: 40px;
+  position: fixed;
+  z-index: 999;
+}
+
+.toolbar span {
+  transform: translateY(-10px);
+}
+
+nav {
+  padding: 3rem 4rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.main {
+  font-size: 2rem;
+}
+
+.nav-end {
+  float: right;
+}
+
+.purple {
+  color: #ac94f4;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #ac94f4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: filter 0.3s;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button.invert {
+  color: #ac94f4;
+  background: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.cols {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.cols > div {
+  width: 45%;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+p button {
+  font-size: 1rem;
+}
+
+svg {
+  height: 100%;
+}
+
+.boxed {
+  transition: outline-width 1s;
+}
+
+.done .boxed {
+  outline: 1px dashed #ff000060; /* space for the border */
+  cursor: move;
+}
+
+#tooltip {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#tooltip.visible {
+  display: block;
+}
+
+#tooltip > * {
+  display: inline;
+  font-size: 1rem;
+}
+
+#tooltip svg {
+  width: 1rem;
+  transform: translateY(3px);
+}
+
+#next {
+  transform: translateY(200vh);
+
+  width: 80%;
+  margin: 0 auto;
+}
